@@ -56,12 +56,12 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">Our Journey</h2>
             <div className="space-y-4 flex-1 overflow-y-auto overflow-x-hidden rounded-xl custom-scrollbar">
                 {[
-                    { date: '14 February, 2022', event: 'Our Journey Began', emoji: '❤️' },
-                    { date: '1 March, 2022', event: 'First Movie Together', emoji: '🎬' },
-                    { date: '1 March, 2022', event: 'First Hug', emoji: '🤗' },
-                    { date: '5 May, 2022', event: 'First Trip Together', emoji: '✈️' },
-                    { date: '10 August, 2022', event: 'First Fight & Patch-up', emoji: '💬' },
-                    { date: '25 December, 2022', event: 'First Christmas Together', emoji: '🎄' },
+                   { date: '03 August, 2023', event: 'Our Journey Began', emoji: '❤️' },
+                    { date: 'Pending...', event: 'First Movie Together', emoji: '🎬' },
+                    { date: '13 August, 2023', event: 'First Hug', emoji: '🤗' },
+                    { date: '27 January, 2024', event: 'First Kiss', emoji: '😘' },
+                    { date: '7 September, 2023', event: 'First Fight & Patch-up', emoji: '💬' },
+                    { date: '11 April, 2024', event: 'First Eid Together', emoji: '🌙' },
                 ]
                     .map((item, index) => (
                         <motion.div
@@ -92,7 +92,7 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <TimeCounter
-                            startDate="2019-10-23"
+                            startDate="2020-10-23"
                             label="As Friends"
                         />
                     </motion.div>
@@ -102,7 +102,7 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <TimeCounter
-                            startDate="2022-01-14"
+                            startDate="2023-08-02"
                             label="As a Couple"
                         />
                     </motion.div>
@@ -142,7 +142,7 @@ export default function MainContent() {
                         >
                             {/* If you want to show your pics then you can save your pics in public/images folder like this 1.jpg, 2.jpg, 3.jpg then replace the src to this - /images/${i}.jpg */}
                             <Image
-                                src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                src={`/images/${i}.jpg`}
                                 alt={`Gallery image ${i}`}
                                 width={330}
                                 height={270}
@@ -255,7 +255,7 @@ export default function MainContent() {
                     >
                         {/* When showing your own pics replace image src with this - /images/${selectedImage}.jpg */}
                         <Image
-                            src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                            src={`/images/${selectedImage}.jpg`}
                             alt={`Gallery image ${selectedImage}`}
                             width={300}
                             height={250}
